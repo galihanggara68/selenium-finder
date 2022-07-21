@@ -43,7 +43,7 @@ class Finder:
         if json_map["type"] == "text":
             self.data_map[key] = self.wait.until(EC.visibility_of_element_located((By.CSS_SELECTOR, json_map["elem"]))).text
         if json_map["type"] == "value":
-            self.data_map[key] = self.wait.until(EC.visibility_of_element_located((By.CSS_SELECTOR, json_map["elem"]))).get_attribute(json_map["value"])
+            self.data_map[key] = self.wait.until(EC.visibility_of_element_located((By.CSS_SELECTOR, json_map["elem"]))).value
         if json_map["type"] == "attribute":
             self.data_map[key] = self.wait.until(EC.visibility_of_element_located((By.CSS_SELECTOR, json_map["elem"]))).get_attribute(json_map["attribute"])
     
