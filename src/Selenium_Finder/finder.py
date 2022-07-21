@@ -7,7 +7,7 @@ import json
 
 class Finder:
     
-    def __init__(self, driver, options = None):
+    def __init__(self, driver, options = {}):
         self.driver = driver
         self.global_wait = options["global_wait"] if "global_wait" in options.keys() else 10
         self.iterable_each_wait = options["iterable_each_wait"] if "iterable_each_wait" in options.keys() else 1
