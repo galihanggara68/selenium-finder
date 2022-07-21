@@ -11,7 +11,9 @@ You can easily find elements (by css selectors) in this case, using just JSON ma
 Clone this repo to your current directory
 
 > git clone https://github.com/galihanggara68/selenium-finder.git
-> or install using pip
+
+or install using pip
+
 > pip3 install git+https://github.com/galihanggara68/selenium-finder.git@master
 
 ### Import library
