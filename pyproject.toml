@@ -1,0 +1,17 @@
+[project]
+name = "Selenium_Finder"
+version = "0.0.1"
+authors = [
+  { name="Galih Anggara", email="galihanggara68@gmail.com" },
+]
+description = "Selenium Finder using JSON mapping file"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/galihanggara68/selenium-finder"
+"Bug Tracker" = "https://github.com/galihanggara68/selenium-finder/issues"
