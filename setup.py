@@ -7,6 +7,5 @@ setup(name='Selenium Finder',
       description='Selenium Finder using JSON mapping file',
       author='Galih Anggara',
       author_email='galihanggara68@gmail.com',
-      url='https://github.com/galihanggara68/selenium-finder',
-      packages=['distutils', 'distutils.command'],
+      url='https://github.com/galihanggara68/selenium-finder'
      )
