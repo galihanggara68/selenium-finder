@@ -19,7 +19,10 @@ or install using pip
 ### Import library
 
 First of all import Finder class
-`from finder.finder import Finder`
+
+```
+from Selenium_Finder.finder import Finder
+```
 
 ### Using Finder class
 
@@ -27,16 +30,22 @@ First of all import Finder class
 
 ```
 from selenium import webdriver
+
 driver = webdriver.Chrome()
+
 # global_wait default 10 second
 # iterable_each_wait default 1 second
 options = {"global_wait": 10, "iterable_each_wait": 2}
 finder = Finder(driver, options)
+
 driver.get("https://example.com")
+
 # load mapping data
 finder.load_mapping("json_mapping.json")
+
 # execute finder
 finder.by_json_scheme()
+
 # get successfully mapped data
 print(finder.get_mapped_data())
 ```
@@ -72,13 +81,13 @@ get successful mapped data
 ```
 {
     [map_name]: {
-        "type": ["clickable", "typable", "iterable", "text", "value", "attribute"],
+        "type": ["clickable" | "typable" | "iterable" | "text" | "value" | "attribute"],
         "elem": [css selector element]
     }
 }
 ```
 
-### text and value mapping
+### _text_ and _value_ mapping
 
 ```
 {
@@ -89,7 +98,7 @@ get successful mapped data
 }
 ```
 
-### attribute mapping
+### _attribute_ mapping
 
 ```
 {
@@ -101,7 +110,7 @@ get successful mapped data
 }
 ```
 
-### clickable mapping
+### _clickable_ mapping
 
 `effect` propery will executed after element clicked
 
@@ -117,7 +126,7 @@ get successful mapped data
 }
 ```
 
-### typable mapping
+### _typable_ mapping
 
 `text` propery is a keys that sent to element
 `enter` boolean, if true it will send enter key
@@ -126,14 +135,14 @@ get successful mapped data
 {
 	"search": {
 		"type": "typable",
-		"elem": ".search-global-typeahead__input",
-		"text": "query text",
-		"enter": true
+		"elem": [css selector element],
+		"text": [text to send],
+		"enter": [true | false]
 	},
 }
 ```
 
-### iterable mapping
+### _iterable_ mapping
 
 `map` will be a mapper for each item iterated
 
@@ -150,7 +159,7 @@ get successful mapped data
 }
 ```
 
-## Mapping Example
+## JSON Mapping Example
 
 ```
 {
