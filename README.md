@@ -105,7 +105,7 @@ get successful mapped data
     [map name]: {
         "type": "attribute",
         "elem": [css selector element],
-        "attribute": [attribute selector]
+        "attribute": [attribute name]
     }
 }
 ```
