@@ -181,7 +181,8 @@ get successful mapped data
 		"type": "iterable",
 		"elem": "#skills ~ div ul > li > div",
 		"map": {
-			"name": "div > div span.t-bold"
+			"name": "div > div span.t-bold",
+            "level": "div > div span.t-muted"
 		}
 	}
 }
